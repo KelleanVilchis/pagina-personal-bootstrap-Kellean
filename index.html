@@ -10,24 +10,47 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Navbar Profesional (Sesión 6) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Kellean Ganeci Vilchis Martinez</a>
+      
+      <!-- Marca personal -->
+      <a class="navbar-brand" href="#">Kellean Ganeci</a>
+
+      <!-- Botón hamburguesa -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Menú -->
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+
+          <!-- Dropdown obligatorio -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Más
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+              <li><a class="dropdown-item" href="#tecnologias">Tecnologías</a></li>
+            </ul>
+          </li>
+
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero (Sesión 5 mejorado) -->
+  <!-- Hero -->
   <section class="bg-dark text-white py-5 text-center">
     <div class="container">
       <h1 class="display-4">Hola, soy Kellean Ganeci Vilchis Martinez</h1>
@@ -37,81 +60,60 @@
   </section>
 
   <!-- Sobre mí -->
-  <section id="sobre-mi" class="py-5 mt-3">
+  <section id="sobre-mi" class="py-5">
     <div class="container">
-      <div class="row g-4 align-items-center">
-
-        <!-- Imagen -->
-        <div class="col-12 col-md-4 col-lg-3 text-center">
-          <img src="https://via.placeholder.com/250"
-               class="img-fluid rounded-circle"
-               alt="Foto de perfil">
-        </div>
-
-        <!-- Descripción -->
-        <div class="col-12 col-md-8 col-lg-9">
-          <h2 class="mb-3">Sobre mí</h2>
-          <p>
-            Soy estudiante de Ingeniería en Sistemas Computacionales con interés en
-            desarrollo web, backend y automatización. Me gusta crear soluciones
-            eficientes combinando software y hardware, además de mejorar
-            constantemente mis habilidades técnicas.
-          </p>
-        </div>
-
-      </div>
+      <h2 class="mb-3">Sobre mí</h2>
+      <p>
+        Soy estudiante de Ingeniería en Sistemas Computacionales con interés en desarrollo web,
+        backend y automatización. Me enfoco en crear soluciones eficientes y seguir mejorando
+        mis habilidades técnicas.
+      </p>
     </div>
   </section>
 
-  <!-- Proyectos (Sesión 5 rediseño estratégico) -->
+  <!-- Proyectos -->
   <section id="proyectos" class="bg-light py-5">
     <div class="container">
       <h2 class="mb-4 text-center">Proyectos</h2>
 
       <div class="row g-4">
 
-        <!-- Proyecto 1 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100">
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Proyecto 1">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top">
             <div class="card-body">
               <span class="badge bg-primary mb-2">Django</span>
               <h5 class="card-title">Sistema Académico</h5>
               <p class="card-text">
-                Plataforma web para la gestión de alumnos, materias y calificaciones,
-                incluyendo control de acceso por roles y panel administrativo.
+                Plataforma web para gestión de alumnos, materias y calificaciones con control de acceso.
               </p>
               <a href="#" class="btn btn-primary">Ver más</a>
             </div>
           </div>
         </div>
 
-        <!-- Proyecto 2 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100">
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Proyecto 2">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top">
             <div class="card-body">
               <span class="badge bg-warning text-dark mb-2">Python</span>
               <h5 class="card-title">Automatización</h5>
               <p class="card-text">
-                Herramienta desarrollada para optimizar tareas repetitivas mediante
-                scripts en Python, mejorando tiempos y reduciendo errores operativos.
+                Scripts para optimizar tareas repetitivas y mejorar la productividad del sistema.
               </p>
               <a href="#" class="btn btn-outline-primary">Ver más</a>
             </div>
           </div>
         </div>
 
-        <!-- Proyecto 3 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow-sm h-100">
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Proyecto 3">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top">
             <div class="card-body">
               <span class="badge bg-success mb-2">Bootstrap</span>
               <h5 class="card-title">Sitio Responsivo</h5>
               <p class="card-text">
-                Página web adaptable a distintos dispositivos utilizando el sistema
-                de grid, breakpoints y componentes modernos de Bootstrap.
+                Página adaptable a distintos dispositivos utilizando grid y componentes modernos.
               </p>
               <a href="#" class="btn btn-primary">Ver más</a>
             </div>
@@ -122,15 +124,16 @@
     </div>
   </section>
 
-  <!-- Solo visible en escritorio -->
-  <div class="container my-4 d-none d-lg-block">
-    <div class="alert alert-info text-center">
-      Este mensaje solo se ve en escritorio
+  <!-- Tecnologías (para el dropdown) -->
+  <section id="tecnologias" class="py-5">
+    <div class="container">
+      <h2 class="mb-3">Tecnologías</h2>
+      <p>HTML, CSS, Bootstrap, Python, Django y JavaScript.</p>
     </div>
-  </div>
+  </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="py-5">
+  <section id="contacto" class="py-5 bg-light">
     <div class="container">
       <h2 class="mb-4 text-center">Contacto</h2>
       <form class="mx-auto" style="max-width: 500px;">
